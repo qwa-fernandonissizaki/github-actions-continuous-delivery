@@ -47,3 +47,7 @@ Outputs:
   StagingUrl:
     Description: "Staging URL"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+Parameters: 
+    IdentityNameParameter: 
+      Type: String
+      Default:"Identity"
